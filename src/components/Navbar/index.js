@@ -2,13 +2,13 @@ import React from 'react'
 
 import * as S from './styled'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <S.Nav>
         <S.NavbarContainer>
           <S.NavLogo to="/">dolla</S.NavLogo>
-          <S.MobileIcon>
+          <S.MobileIcon onClick={toggle}>
             <S.Bars />
           </S.MobileIcon>
           <S.NavMenu>
