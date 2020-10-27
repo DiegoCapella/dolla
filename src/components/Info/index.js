@@ -16,7 +16,9 @@ const Info = () => {
     description,
     buttonLabel,
     img, 
-    alt
+    alt,
+    dark,
+    primary
   } = homeObjOne;
   return (
     <>
@@ -29,7 +31,16 @@ const Info = () => {
                 <S.Heading lightText={lightText}>{headline}</S.Heading>
                 <S.Subtitle darkText={darkText}>{description}</S.Subtitle>
                 <S.BtnWrap>
-                  <B.Button to="/home">{buttonLabel}</B.Button>
+                  <B.Button 
+                    to="/home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                  >{buttonLabel}</B.Button>
                 </S.BtnWrap> 
               </S.TextWrapper>
             </S.Column1>
