@@ -1,25 +1,21 @@
 import React from 'react'
 import * as B from '../Button/styled'
-import { homeObjOne } from './data'
 
 import * as S from './styled'
 
-const Info = () => {
-  const { 
-    lightBg, 
-    id, 
-    imgStart, 
-    topLine, 
-    lightText, 
-    headline,
-    darkText,
-    description,
-    buttonLabel,
-    img, 
-    alt,
-    dark,
-    primary
-  } = homeObjOne;
+const Info = ({ lightBg, 
+  id, 
+  imgStart, 
+  topLine, 
+  lightText, 
+  headline,
+  darkText,
+  description,
+  buttonLabel,
+  img, 
+  alt,
+  dark,
+  primary }) => {
   return (
     <>
       <S.InfoContainer lightBg={lightBg} id={id}>

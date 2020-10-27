@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Hero from '../components/Hero';
 import Info from '../components/Info';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFive, homeObjFour } from '../components/Info/data'
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/Info/data'
 
 
 const Home = () => {
@@ -22,8 +22,6 @@ const Home = () => {
       <Info {...homeObjOne} />
       <Info {...homeObjTwo} />
       <Info {...homeObjThree} />
-      <Info {...homeObjFour} />
-      <Info {...homeObjFive} />
     </>
   )
 }
